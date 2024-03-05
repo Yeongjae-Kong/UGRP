@@ -27,6 +27,7 @@ Among the 3D reconstruction works, 3D reconstruction with 4,000 times fewer imag
 
 Figure 1.
 Data Lightweight Idea Overview
+![image](https://github.com/Yeongjae-Kong/UGRP/assets/67358433/55ae5e4a-bc60-47fc-b4a8-f0f33f30d7ae)
  
 
 Among several frame interpolation models, RRIN (Li et al., 2020) was selected for frame interpolation due to its low complexity and strong performance. RRIN has improved performance while reducing the complexity of training by applying reactive learning to the place where optical flow and warped frames are refined (Li et al., 2020, p.2). Additionally, a new adaptive weight map was introduced to render the interpolated frame more visually natural, incorporating the light change and occlusion information of the frame (Li et al., 2020, p.3). Moreover, RRIN significantly reduces the complexity and volume of the model, with all sub-modules being composed solely of shallow UNets (Li et al., 2020, p.2). Despite the model's lightweight nature, quantitative superiority over other works was demonstrated. The model pipeline is depicted in Figure 2.
