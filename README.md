@@ -113,13 +113,22 @@ In conclusion, our study attempted to lighten LLFF by producing higher-quality d
 There were many transparent features of the campus object we were trying to shoot. In this case, it is unsuitable for view synthesis. Also, the quality of the data we used was not good. Several attempts made the data back into camera parameters, but at this time, the difference between the size of the object and the view point between the data taken was not deeply considered. In the case of Extreme view synthesis, it is judged that the baseline between dataset views is too wide and does not work well. It might be produced comparable performance if I took the focal used in the original text of LLFF and took the data as it was.
 
 #### References
+
 Choi, I. (2019). Extreme View Synthesis, ICCV 2019, https://doi.org/10.48550/arXiv.1812.04777
+
 Li, H. (2020). Video Frame Interpolation Via Residue Refinement, ICASSP 2020, https://doi.org/10.1109/ICASSP40776.2020.9053987
+
 Mildenhall, B. (2019). Local Light Field Fusion: Practical View Synthesis with Prescriptive Sampling Guidelines, SIGGRAPH 2019, 38(4), https://doi.org/10.48550/arXiv.1905.0088
+
 Mildenhall, B. (2020). NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis, ECCV 2020, https://doi.org/10.48550/arXiv.2003.08934
+
 Murtagh, F. (1991). Multilayer perceptrons for classification and regression, Neurocomputing, https://doi.org/10.1016/0925-2312(91)90023-5
+
 Niemeyer, M & Geiger. A. (2020). GIRAFFE: Representing Scenes as Compositional Generative Neural Feature Fields, CVPR 2021, https://doi.org/10.48550/arXiv.2011.12100
+
 O`Shea. K & Nash. R. (2015). An Introduction to Convolutional Neural Networks, CVPR 2015, https://doi.org/10.48550/arXiv.1511.08458
+
 Samavati, T & Soryani, M. (2023). Deep learning-based 3D reconstruction: a survey, Artificial Intelligence Review 2023, https://doi.org/10.1007/s10462-023-10399-2
+
 Xia, W. (2021). GAN Inversion: A Survey, CVPR 2021, https://doi.org/10.48550/arXiv.2101.05278
 
