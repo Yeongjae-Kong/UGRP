@@ -4,7 +4,7 @@
 
 
 
-<div align=center font-weight=bold>
+<div align=center font-style=bold>
   Production of DGIST campus 3D Model: Utilizing Data Lightening in SOTA 3D Reconstruction
 
 
