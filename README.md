@@ -4,17 +4,18 @@
 
 
 
-<div align=center style='font-weight:bold;'>
-  **Production of DGIST campus 3D Model: Utilizing Data Lightening in SOTA 3D Reconstruction**
-
+<div align=center>
+  <b>Production of DGIST campus 3D Model: Utilizing Data Lightening in SOTA 3D Reconstruction</b>
+  <br></br>
 
   Kong Yeong Jae
 
   School of Undergraduate Studies, DGIST
-
 </div>
-<div align=center font-weight=bold>
-Abstract
+<br></br>
+<div align=center>
+<b>Abstract</b>
+ <br></br>
 </div>
 This research explores the utilization of state-of-the-art 3D reconstruction techniques, specifically focusing on Local Light Field Fusion (LLFF), to create a 3D model of the DGIST campus. Recognizing the challenge of reducing input data for efficient 3D reconstruction, our team introduces a novel approach involving data lightening through frame interpolation. The method incorporates RRIN, a lightweight frame interpolation model, to reduce the dataset size while addressing the challenge of viewpoint differences between frames. To further enhance data lightening, Extreme View Synthesis is introduced, aiming to replace frame-interpolated images. However, encountering challenges in depth-map estimation, we sought to address the issue through the integration of DPSNet to enhance the quality of the depth map. This process aimed to overcome limitations associated with directly applying Extreme View Synthesis to LLFF, particularly due to the complexities involved in estimating camera parameters for distant views. Our study represents a valuable exploration into advancing depth-map quality and extending the applicability of frame interpolation for efficient 3D reconstruction. 
 
@@ -25,7 +26,8 @@ Local Light Field Fusion (LLFF), the previous state-of-the-art of 3D reconstruct
 In this work, our team identified a significant gap in the field concerning the reduction of input data required for 3D reconstruction, a persistent challenge that has constrained the efficiency and applicability of reconstructive technologies across various domains. We conducted 3D reconstruction for DGIST objects, and further conducted research to reduce the number of data sets required by the existing framework. Clearly, a column was removed from the existing data set to lighten the data. After that, we run frame interpolation with images on both sides of the removed column, putting it into LLFF input and proceeding with a 3D reconstruction with less data.
 
 <div align=center>
-#### Methodology
+<b>Methodology</b>
+ <br></br>
 </div>
 
 Among the 3D reconstruction works, 3D reconstruction with 4,000 times fewer images than previous studies is enabled by Local Light Field Fusion (LLFF) (Mildenhall et al., 2019, p.1). The targeted objects can be reconstructed in 3D by collecting images in a total of 20 grids, composed of 4x5 forms. Consequently, it was hypothesized that recent technologies could be integrated to enable 3D reconstruction with datasets lighter than these 20. Moreover, frame interpolation was involved in the methods utilized to lighten the input data for LLFF. Data lightening was achieved by implementing frame interpolation and integrating images on both sides of the column, extracted from the existing dataset. Consequently, 3D reconstruction was anticipated to be enabled with merely 16 pieces of data. The overview of the model is indicated in Figure 1.
@@ -104,7 +106,8 @@ Two different frames in the results of Extreme View Synthesis  by DPSNet Depth m
 Although we derived a relatively better Depth map with DPSNet, the results of Extreme View Synthesis were insufficient for use as input for LLFF. In the case of existing Extreme View Synthesis, almost all parts were not synthesized, but after improving the Depth map, synthesis was made in many areas. This proved that the first attempt was a problem with the estimation of Depth. Nevertheless, the poor results of Extreme View Synthesis, which improved depth, seem to be due to the failure to fully estimate the camera's characteristics, pose, and view direction. As a result, attempts to lighten LLFF's data through Extreme View Synthesis failed.
 
 <div align=center>
-#### Discussions
+<b>Discussions</b>
+ <br></br>
 </div>
 We aimed to reduce the weight of data from Novel view Synthesis in general. The first attempt is to replace the frame interpolated frame through RRIN used in video interpolation. As a result, our interpolated-dataset showed particularly high results in SSIM, which evaluates human visual quality differences, compared to 4x4 or 4x3 LLFF.
 
@@ -122,7 +125,8 @@ In conclusion, our study attempted to lighten LLFF by producing higher-quality d
 
 There were many transparent features of the campus object we were trying to shoot. In this case, it is unsuitable for view synthesis. Also, the quality of the data we used was not good. Several attempts made the data back into camera parameters, but at this time, the difference between the size of the object and the view point between the data taken was not deeply considered. In the case of Extreme view synthesis, it is judged that the baseline between dataset views is too wide and does not work well. It might be produced comparable performance if I took the focal used in the original text of LLFF and took the data as it was.
 <div align=center>
-#### References
+<b>References</b>
+ <br></br>
 </div>
 
 Choi, I. (2019). Extreme View Synthesis, ICCV 2019, https://doi.org/10.48550/arXiv.1812.04777
