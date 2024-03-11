@@ -4,16 +4,17 @@
 
 
 
-<div align=center>
-  ### Production of DGIST campus 3D Model: Utilizing Data Lightening in SOTA 3D Reconstruction
+<div align=center font-weight=bold>
+  Production of DGIST campus 3D Model: Utilizing Data Lightening in SOTA 3D Reconstruction
+
 
   Kong Yeong Jae
 
   School of Undergraduate Studies, DGIST
 
 </div>
-<div align=center>
-#### Abstract
+<div align=center font-weight=bold>
+Abstract
 </div>
 This research explores the utilization of state-of-the-art 3D reconstruction techniques, specifically focusing on Local Light Field Fusion (LLFF), to create a 3D model of the DGIST campus. Recognizing the challenge of reducing input data for efficient 3D reconstruction, our team introduces a novel approach involving data lightening through frame interpolation. The method incorporates RRIN, a lightweight frame interpolation model, to reduce the dataset size while addressing the challenge of viewpoint differences between frames. To further enhance data lightening, Extreme View Synthesis is introduced, aiming to replace frame-interpolated images. However, encountering challenges in depth-map estimation, we sought to address the issue through the integration of DPSNet to enhance the quality of the depth map. This process aimed to overcome limitations associated with directly applying Extreme View Synthesis to LLFF, particularly due to the complexities involved in estimating camera parameters for distant views. Our study represents a valuable exploration into advancing depth-map quality and extending the applicability of frame interpolation for efficient 3D reconstruction. 
 
@@ -58,8 +59,8 @@ Figure 3.
 Pipeline of Data Lightening
 ![image](https://github.com/Yeongjae-Kong/UGRP/assets/67358433/6cd873f9-d90e-438b-948a-bba8f6be2bfb)
 
-<div align=center>
-#### Results
+<div align=center font-weight=bold>
+Results
 </div>
 Figure 4 shows the result of 3D reconstruction based on normalized 4x5 images. Although black noise occurs at the edge of some frame, view synthesis themselves have very few artifacts and smooth good results. Based on the pre-trained model, this experiment was conducted in a computing environment of Tesla P100-PCIE-16GB (GPU) Intel(R) Xeon(R) CPU @ 2.3 GHz (CPU). The test time was 3-4 hours per dataset.
 
